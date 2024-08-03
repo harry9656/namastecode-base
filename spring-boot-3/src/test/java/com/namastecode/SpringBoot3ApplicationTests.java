@@ -1,13 +1,13 @@
-package com.namastecode.parent;
+package com.namastecode;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ParentApplicationTests {
+class SpringBoot3ApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
