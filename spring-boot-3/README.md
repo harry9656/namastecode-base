@@ -1,3 +1,6 @@
-## Reference articles
+## Articles
 
-[How to Retry Using Restclient](https://namastecode.com/posts/how-to-retry-using-restclient/)
+| Article Title | German | Spanish | French | Italian | Chinese |
+|---------------|--------|---------|--------|---------|---------|
+| [How to Retry Using Restclient](https://namastecode.com/posts/how-to-retry-using-restclient/) | [DE](https://namastecode.com/de/posts/how-to-retry-using-restclient/) | [ES](https://namastecode.com/es/posts/how-to-retry-using-restclient/) | [FR](https://namastecode.com/fr/posts/how-to-retry-using-restclient/) | [IT](https://namastecode.com/it/posts/how-to-retry-using-restclient/) | [ZH-CN](https://namastecode.com/zh-cn/posts/how-to-retry-using-restclient/) |
+| [Configuring the Port for a Spring Boot Application](https://namastecode.com/posts/configure-the-port-for-a-spring-boot-application/) | [DE](https://namastecode.com/de/posts/configure-the-port-for-a-spring-boot-application/) | [ES](https://namastecode.com/es/posts/configure-the-port-for-a-spring-boot-application/) | [FR](https://namastecode.com/fr/posts/configure-the-port-for-a-spring-boot-application/) | [IT](https://namastecode.com/it/posts/configure-the-port-for-a-spring-boot-application/) | [ZH-CN](https://namastecode.com/zh-cn/posts/configure-the-port-for-a-spring-boot-application/) |
