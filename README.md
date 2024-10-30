@@ -3,3 +3,4 @@ This repository contains the complete code contained from the namastecode.com po
 
 ## Modules
 - [Spring Boot 3](spring-boot-3)
+- [RAG Spring AI](rag-spring-ai)
