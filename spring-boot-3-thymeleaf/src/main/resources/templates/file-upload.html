@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+</head>
+<body>
+<h2>File Upload</h2>
+
+<form action="/upload" method="post" enctype="multipart/form-data" >
+    <input type="file" name="file" required>
+    <button type="submit">Upload</button>
+</form>
+
+<!-- Error/Success messages display here -->
+<div th:if="${message}" class="alert"
+     th:classappend="${message.contains('Success') ? 'alert-success' : 'alert-error'}"
+     th:text="${message}"></div>
+</body>
+</html>
