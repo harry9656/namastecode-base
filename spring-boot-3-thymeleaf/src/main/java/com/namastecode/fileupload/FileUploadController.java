@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -29,22 +28,22 @@ public class FileUploadController {
     @PostMapping("/upload")
     public String handleUpload(
             @RequestParam("file") MultipartFile file,
-            RedirectAttributes redirectAttributes
+            Model model
     ) {
         if (file.isEmpty()) {
-            redirectAttributes.addFlashAttribute("message", "Please select a file");
-            return "redirect:/";
+            model.addAttribute("message", "Please select a file");
+            return "file-upload";
         }
         try {
             String filename = StringUtils.cleanPath(file.getOriginalFilename());
             Path destination = Paths.get(uploadDir, filename);
             Files.createDirectories(destination.getParent());
             file.transferTo(destination);
-            redirectAttributes.addFlashAttribute("message", "Success: " + filename + " (" + file.getSize() + " bytes)");
-            return "redirect:/";
+            model.addAttribute("message", "Success: " + filename + " (" + file.getSize() + " bytes)");
+            return "file-upload";
         } catch (IOException e) {
-            redirectAttributes.addFlashAttribute("message", "Error: " + e.getMessage());
-            return "redirect:/";
+            model.addAttribute("message", "Error: " + e.getMessage());
+            return "file-upload";
         }
     }
 }
